@@ -1,0 +1,81 @@
+{
+  "MahadevMahadevi" : {
+    "id" : "MahadevMahadevi",
+    "profilePicPS" : "https://i.pinimg.com/736x/24/4e/64/244e645ff7f9331cc7c754bdcbf979c5.jpg" ,
+    "followers" : "uncountable",
+    "following" : "infinite",
+    "bio" : "We are creators" ,
+    "highlights" : [
+        {
+          "higlights1" : "https://i.ebayimg.com/images/g/ckoAAOSwzkVnj1Kt/s-l400.jpg" ,
+          "higlights2" : "https://i.pinimg.com/736x/8b/75/5f/8b755fcbc59391b3eecd4235bf05bfb3.jpg" ,
+          "highlights3" : "https://i.pinimg.com/736x/44/a6/50/44a650179b2aaf60186369aaacd84265.jpg"
+        } 
+    ] ,
+    "posts" : [
+        {
+          "image" : "https://i.pinimg.com/736x/f8/cb/82/f8cb82a7e68c475983d7efd20b08a338.jpg" ,
+          "likes" : "uncountable",
+          "comments" : "infinite"
+        },
+        {
+          "image" : "https://i.pinimg.com/736x/b1/11/8c/b1118c36bcf5acf032ba06600c429e27.jpg",
+          "likes" : "uncountable" ,
+          "comments" : "infinite"
+        },
+        {
+          "image" : "https://i.pinimg.com/736x/5f/b3/4c/5fb34c21c58eb646968b6be488dc288b.jpg",
+          "likes" : "uncountable" ,
+          "comments" : "infinite"
+        }
+    ] 
+  } ,
+  "dogs" : {
+    "id" : "dogs",
+    "profilePicPS" : "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" ,
+    "followers" : 3000 ,
+    "following" : 2900 ,
+    "bio" : "We are creation" ,
+    "posts" : [
+        {
+          "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlO4erNhFuKmV1TNly5fu8RbSFftERnpUCUg&s" ,
+          "likes" : 3000,
+          "comments" : 41
+        } ,
+        {
+          "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE3nFNyDLnzuQokESigGsAOaDpWh1iWqcuGg&s",
+          "likes" : 2500,
+          "comments" : 32
+        } ,
+        {
+          "image" : "https://www.hartz.com/wp-content/uploads/2022/04/small-dog-owners-1.jpg",
+          "likes" : 500,
+          "comments" : 6
+        }
+    ] 
+  } ,
+  "cats" : {
+    "id" : "MahadevMahadevi",
+    "profilePicPS" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqWNfB45nPmBfg14rIDYyEQgU64kn2jysFg&s" ,
+    "followers" : 9000 ,
+    "following" : 3300 ,
+    "bio" : "We are creation" ,
+    "posts" : [
+        {
+          "image" : "https://www.rewild.org/uploads/2025/01/B0000336_Ben-Warren.jpg?auto=webp" ,
+          "likes" : 3000,
+          "comments" : 41
+        } ,
+        {
+          "image" : "https://i.pinimg.com/736x/b1/11/8c/b1118c36bcf5acf032ba06600c429e27.jpg",
+          "likes" : 2500,
+          "comments" : 32
+        } ,
+        {
+          "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX4EbLlkmCJhmk4LI_PxiTc7OrHEkFE_wjeA&s",
+          "likes" : 500,
+          "comments" : 6
+        }
+    ]
+  }
+} 
