@@ -30,5 +30,5 @@ app.use( (req , res , next) => {
     res.status(400).render("notFound") ;
 }) ;
 app.listen(port , () => {
-    console.log(`ParvatiammaShivappa , button was clicked , on port.no ${port}`) ;
+    console.log(`ParvatiammaShivappa , our server is listening on port.no ${port}`) ;
 }) ;
