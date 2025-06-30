@@ -5,7 +5,7 @@ const app = express() ;
 
 const port = 333 ;
 app.set("view engine" , "ejs") ;
-app.use(express.static(path.join(__dirname , "/views"))) ;
+app.use(express.static(path.join(__dirname , ".." , "SS" , "public"))) ;
 
 app.use( (req , res , next) => {
     console.log("ParvatiammaShivappa , request received...") ;
