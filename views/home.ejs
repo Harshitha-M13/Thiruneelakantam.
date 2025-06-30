@@ -1,148 +1,152 @@
 <%- include("../includes/head.ejs") %>
 <body>
-    <div id = "navBarParvatiammaShivappa">
-        <nav>
-            <div class = "iconPS">Instagram</div>
-            <div id = "barsPS">
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-house-user fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Home</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-magnifying-glass fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Search</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-compass fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Explore</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-video fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Reels</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-paper-plane fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Message</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-heart fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Notification</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-square-plus fa-2x PSnavIcons"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Create</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-id-card fa-2x PSnavIcons" id = "PSwomen"></i>
-                    <!-- <i class="fa-solid fa-address-card PSnavIcons" id = "PSmen"></i> -->
-                    <span class = "ParvatiammaShivappaNavBar">Profile</span>
-                </div>
-            </div>
-            <div id = "PSendnavBar">
-                <div class = "PSeachEle">
-                    <i class="fa-regular fa-circle fa-2x"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Meta AI</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-at fa-2x"></i>
-                    <span class = "ParvatiammaShivappaNavBar">Threads</span>
-                </div>
-                <div class = "PSeachEle">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                    <span class = "ParvatiammaShivappaNavBar">More</span>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div id = "ParvatiammaShivappaProfile">
-        <div id = "PSprofileInfo">
-                <div id = "PSprofilePic">
-                    <img src = "<%= instaData.profilePicPS %>" alt = "<%= instaData.id %>'s profile pic" id = "PSProfileimg">
-               </div>
-               <div id = "PSiLoveU">
-                   <div class = "GowriShankar">
-                            <h1 id = "PSh1"> <%= instaData.id %> </h1>
-                            &nbsp;&nbsp;&nbsp;
-                            <button type = "button" id = "PSbtn1">Follow</button>
-                            &nbsp;&nbsp;&nbsp;
-                            <button type = "button" id = "PSbtn2">Message</button>
-                            <i class="fa-solid fa-ellipsis"></i>
+    <header>
+        <div id = "navBarParvatiammaShivappa">
+            <nav>
+                <div class = "iconPS">Instagram</div>
+                <div id = "barsPS">
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-house-user fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Home</span>
                     </div>
-                    <div class = "GowriShankar">
-                            <span> <%= instaData.posts.length %> <strong class = "PScolorCh">posts</strong> </span>
-                            &nbsp;&nbsp;&nbsp;
-                            <span> <%= instaData.followers %> <strong class = "PScolorCh">followers</strong>
-                            </span>
-                            &nbsp;&nbsp;&nbsp;
-                            <span> <%= instaData.following %> <strong class = "PScolorCh">following</strong> </span>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-magnifying-glass fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Search</span>
                     </div>
-                    <section class = "GowriShankar">
-                        <h3 id = "PSh3"> <%= instaData.id %> </h3>
-                        <h5 id = "PSid"> &#64; <%= instaData.id %> </h5>
-                    </section>
-                    <section class = "GowriShankar">
-                        <h3 class = "PSkrupa">bio</h3>
-                        <h5 class = "PSkrupa"> <%= instaData.bio %> </h5>
-                    </section>
-               </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-compass fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Explore</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-video fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Reels</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-paper-plane fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Message</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-heart fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Notification</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-square-plus fa-2x PSnavIcons"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Create</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-id-card fa-2x PSnavIcons" id = "PSwomen"></i>
+                        <!-- <i class="fa-solid fa-address-card PSnavIcons" id = "PSmen"></i> -->
+                        <span class = "ParvatiammaShivappaNavBar">Profile</span>
+                    </div>
+                </div>
+                <div id = "PSendnavBar">
+                    <div class = "PSeachEle">
+                        <i class="fa-regular fa-circle fa-2x"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Meta AI</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-at fa-2x"></i>
+                        <span class = "ParvatiammaShivappaNavBar">Threads</span>
+                    </div>
+                    <div class = "PSeachEle">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                        <span class = "ParvatiammaShivappaNavBar">More</span>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <% if(!instaData.highlights) { %>
-                <div id = "PShighlights">
-                    <div class = "PSHltext"> 
-                        <div class = "PShighlights">
-                            <i class="fa-solid fa-plus fa-2x"></i>
+    </header>
+    <main>
+        <div id = "ParvatiammaShivappaProfile">
+            <div id = "PSprofileInfo">
+                    <div id = "PSprofilePic">
+                        <img src = "<%= instaData.profilePicPS %>" alt = "<%= instaData.id %>'s profile pic" id = "PSProfileimg">
+                   </div>
+                   <div id = "PSiLoveU">
+                       <div class = "GowriShankar">
+                                <h1 id = "PSh1"> <%= instaData.id %> </h1>
+                                &nbsp;&nbsp;&nbsp;
+                                <button type = "button" id = "PSbtn1">Follow</button>
+                                &nbsp;&nbsp;&nbsp;
+                                <button type = "button" id = "PSbtn2">Message</button>
+                                <i class="fa-solid fa-ellipsis"></i>
                         </div>
-                        <h3>Add</h3>
-                    </div>
-                    <div class = "PSHltext"> 
-                        <div class = "PShighlights">
-                            <i class="fa-solid fa-plus fa-2x"></i>
+                        <div class = "GowriShankar">
+                                <span> <%= instaData.posts.length %> <strong class = "PScolorCh">posts</strong> </span>
+                                &nbsp;&nbsp;&nbsp;
+                                <span> <%= instaData.followers %> <strong class = "PScolorCh">followers</strong>
+                                </span>
+                                &nbsp;&nbsp;&nbsp;
+                                <span> <%= instaData.following %> <strong class = "PScolorCh">following</strong> </span>
                         </div>
-                        <h3>Add</h3>
-                    </div>
-                    <div class = "PSHltext"> 
-                        <div class = "PShighlights">
-                            <i class="fa-solid fa-plus fa-2x"></i>
-                        </div>
-                        <h3>Add</h3>
-                    </div>
-                </div>
-
-        <% } else {
-                for(let i = 0 ; i < instaData.highlights.length ; i++) {
-                let data = instaData.highlights[i] ; %>
+                        <section class = "GowriShankar">
+                            <h3 id = "PSh3"> <%= instaData.id %> </h3>
+                            <h5 id = "PSid"> &#64; <%= instaData.id %> </h5>
+                        </section>
+                        <section class = "GowriShankar">
+                            <h3 class = "PSkrupa">bio</h3>
+                            <h5 class = "PSkrupa"> <%= instaData.bio %> </h5>
+                        </section>
+                   </div>
+            </div>
+            <% if(!instaData.highlights) { %>
                     <div id = "PShighlights">
                         <div class = "PSHltext"> 
-                                <div class = "PShighlights">
-                                    <img src = "<%= data.highlights1 %> " alt="ParvatiammaShivappa-HL1" class = "PS-highlights-img">
-                                </div>
-                                <h3>My devotees</h3>
+                            <div class = "PShighlights">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                            </div>
+                            <h3>Add</h3>
                         </div>
-                        <div class = "PSHltext">
-                                <div class = "PShighlights">
-                                    <img src = "<%= data.highlights2 %> " alt="ParvatiammaShivappa-HL2" class = "PS-highlights-img">
-                                </div>
-                                <h3>My family</h3>
+                        <div class = "PSHltext"> 
+                            <div class = "PShighlights">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                            </div>
+                            <h3>Add</h3>
                         </div>
-                        <div class = "PSHltext">
-                                <div class = "PShighlights">
-                                <img src = "<%= data.highlights3 %> " alt="ParvatiammaShivappa-HL3" class = "PS-highlights-img">
-                                </div>
-                                <h3>My aradya</h3>
+                        <div class = "PSHltext"> 
+                            <div class = "PShighlights">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                            </div>
+                            <h3>Add</h3>
                         </div>
+                    </div>
+    
+            <% } else {
+                    for(let i = 0 ; i < instaData.highlights.length ; i++) {
+                    let data = instaData.highlights[i] ; %>
+                        <div id = "PShighlights">
+                            <div class = "PSHltext"> 
+                                    <div class = "PShighlights">
+                                        <img src = "<%= data.highlights1 %> " alt="ParvatiammaShivappa-HL1" class = "PS-highlights-img">
+                                    </div>
+                                    <h3>My devotees</h3>
+                            </div>
+                            <div class = "PSHltext">
+                                    <div class = "PShighlights">
+                                        <img src = "<%= data.highlights2 %> " alt="ParvatiammaShivappa-HL2" class = "PS-highlights-img">
+                                    </div>
+                                    <h3>My family</h3>
+                            </div>
+                            <div class = "PSHltext">
+                                    <div class = "PShighlights">
+                                    <img src = "<%= data.highlights3 %> " alt="ParvatiammaShivappa-HL3" class = "PS-highlights-img">
+                                    </div>
+                                    <h3>My aradya</h3>
+                            </div>
+                    </div>
+                    <% }
+            } %>
+                <div id = "PS-posts-container">
+                    <% for(let i = 0 ; i < instaData.posts.length ; i++) { %>
+                        <div class = "PS-posts">
+                            <img src = "<%= instaData.posts[i].image %>"  alt = "PS-posts">
+                        </div>   
+                    <% } %>
                 </div>
-                <% }
-        } %>
-            <div id = "PS-posts-container">
-                <% for(let i = 0 ; i < instaData.posts.length ; i++) { %>
-                    <div class = "PS-posts">
-                        <img src = "<%= instaData.posts[i].image %>"  alt = "PS-posts">
-                    </div>   
-                <% } %>
             </div>
         </div>
-    </div>
-    <script src = "/script.js"></script>
+    </main>
+    <script src = "/script.js"></script>    
 </body>
 </html>
 
