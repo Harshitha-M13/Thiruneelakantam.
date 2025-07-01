@@ -23,12 +23,20 @@ app.get("/www.instagram.com/:username" , (req , res) => {
     const data = instaData[username] ;
     console.log(req.query) ;
     let { q , bgColor , color } = req.query ;
-    res.render("home" , {instaData : data}) ;
+    res.render("home" , { instaData : data }) ;
 }) ;
 
 app.use( (req , res , next) => {
     res.status(400).render("notFound") ;
 }) ;
+
+app.get("/insta-login" , (req , res) => {
+    res.render("home") ;
+}) ;
+app.post("/insta-login" , (req , res) => {
+    res.render("notFound") ;
+}) ;
 app.listen(port , () => {
-    console.log(`ParvatiammaShivappa , our server is listening on port.no ${port}`) ;
+    console.log(`ParvatiammaShivappa , our server is listening on 
+        port.no ${port}`) ;
 }) ;
