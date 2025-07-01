@@ -26,16 +26,18 @@ app.get("/www.instagram.com/:username" , (req , res) => {
     res.render("home" , { instaData : data }) ;
 }) ;
 
+app.get("/insta-login" , (req , res) => {
+    res.send("<h1>ParvatiammaShivappa , standard GET response</h1>") ;
+}) ;
+app.post("/insta-login" , (req , res) => {
+    res.send("<h1>ParvatiammaShivappa , standard POst response</h1>") ;
+}) ;
+
 app.use( (req , res , next) => {
     res.status(400).render("notFound") ;
 }) ;
 
-app.get("/insta-login" , (req , res) => {
-    res.render("home") ;
-}) ;
-app.post("/insta-login" , (req , res) => {
-    res.render("notFound") ;
-}) ;
+
 app.listen(port , () => {
     console.log(`ParvatiammaShivappa , our server is listening on 
         port.no ${port}`) ;
