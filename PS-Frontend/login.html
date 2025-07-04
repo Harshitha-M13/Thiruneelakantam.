@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ParvatiammaShivappa login page</title>
+    <style >
+        html , body {
+            margin : 0 auto ;
+        }
+
+
+        div {
+            text-align : center ;
+        }
+    </style>
 </head>
 <body>
-    <form method = "get" action = "http://localhost:333/insta-login">
-        <label for = "PSlogin">username : </label>
-        <input type = "text" placeholder = "Enter your username" id = "PSlogin" name = "username">
-        <button type = "submit">Submit</button>
-    </form>
+    <div id = "getReq">
+        <form method = "get" action = "http://localhost:333/insta-login">
+            <label for = "PSlogin">username : </label>
+            <input type = "text" placeholder = "Enter your username" id = "PSlogin" name = "username">
+            <br>
+            <label for = "password">password : </label>
+            <input type = "password" placeholder = "Enter your password" name = "password" id = "password">
+            <br>
+            <button type = "submit">Submit</button>
+        </form>
+    </div>
     <hr>
-    <form method = "post" action = "http://localhost:333/insta-login">
-        <label for = "PSlogin">username : </label>
-        <input type = "text" placeholder = "Enter your username" id = "PSlogin" name = "username">
-        <button type = "submit">Submit</button>
-    </form>
+    <div id = "postReq">
+        <form method = "post" action = "http://localhost:333/insta-login">
+            <label for = "PSlogin">username : </label>
+            <input type = "text" placeholder = "Enter your username" id = "PSlogin" name = "username">
+            <br>
+            <label for = "password">password : </label>
+            <input type = "password" placeholder = "Enter your password" name = "password" id = "password">
+            <br>
+            <button type = "submit">Submit</button>
+        </form>
+        <script src = "../PS-Backend/public/script.js"></script>
+    </div>
 </body>
 </html>
