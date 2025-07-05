@@ -32,19 +32,19 @@ for(let i = 0 ; i < btns.length ; i++) {
 // console.log(student2) ;
 // let student3 = studentInfoMaker("eve" , "adam" , 99) ;
 // console.log(student3) ;
-function StudentInfoMaker(name , parentsName , age) {
-    this.stu_Name = name ;
-    this.stu_parentsName = parentsName ;
-    this.stu_age = age ; 
+class StudentInfoMaker {
+    constructor(name , parentsName , age) {
+        this.name = name ; 
+        this.parentsName = parentsName ;
+        this.age = age ;
+    }
+    talk() {
+        return `Namate , my name is ${this.name} and my parents name is ${this.parentsName}` ;
+    }
 }
-
-
-
-StudentInfoMaker.prototype.talk = function speak() {
-    return `Namaste , my name is ${this.stu_Name} and my parents name is ${this.stu_parentsName}` ;
-}
-
-
-let student1 = new StudentInfoMaker("HarshithaMahadev" , "MahadevMahadevi" , 19) ;
+let student1 = new StudentInfoMaker("Akshu" , "ParvatiammaShivappa" , 19) ;
 console.log(student1) ;
-let student2 = new StudentInfoMaker("induma" , "MahadevMahadevi" , 19) ;
+let student2 = new StudentInfoMaker("induma" , "ParvatiammaShivappa" , 19) ;
+console.log(student2) ;
+let student3 = new StudentInfoMaker("HarshithaMahadev" , "ParvatiammaShivappa" , 19) ;
+console.log(student3) ;
