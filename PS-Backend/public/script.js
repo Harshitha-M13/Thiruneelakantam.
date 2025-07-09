@@ -26,25 +26,53 @@ for(let i = 0 ; i < btns.length ; i++) {
 
 
 
-// let student1 = studentInfoMaker("HarshithaMahadev" , "MahadevMahadevi" , 19) ;
-// console.log(student1) ;
-// let student2 = studentInfoMaker("adam" , "eve" , 99) ;
-// console.log(student2) ;
-// let student3 = studentInfoMaker("eve" , "adam" , 99) ;
-// console.log(student3) ;
-class StudentInfoMaker {
-    constructor(name , parentsName , age) {
-        this.name = name ; 
-        this.parentsName = parentsName ;
-        this.age = age ;
+// // let student1 = studentInfoMaker("HarshithaMahadev" , "MahadevMahadevi" , 19) ;
+// // console.log(student1) ;
+// // let student2 = studentInfoMaker("adam" , "eve" , 99) ;
+// // console.log(student2) ;
+// // let student3 = studentInfoMaker("eve" , "adam" , 99) ;
+// // console.log(student3) ;
+class Mammals {
+    constructor(name , parenstName) {
+        this.name = name ;
+        this.type = "warm-blooded" ;
     }
-    talk() {
-        return `Namate , my name is ${this.name} and my parents name is ${this.parentsName}` ;
+    eat() {
+        return `i'm eating` ;
     }
 }
-let student1 = new StudentInfoMaker("Akshu" , "ParvatiammaShivappa" , 19) ;
-console.log(student1) ;
-let student2 = new StudentInfoMaker("induma" , "ParvatiammaShivappa" , 19) ;
-console.log(student2) ;
-let student3 = new StudentInfoMaker("HarshithaMahadev" , "ParvatiammaShivappa" , 19) ;
-console.log(student3) ;
+class Dogs extends Mammals {
+    constructor(name) {
+        super(name) ;
+    }
+    bark() {
+        return `woff...` ;
+    }
+    eat() {
+        return `i'm eating , and i'm dog` ;
+    }
+}
+
+
+class Cats extends Mammals {
+    constructor(name) {
+        super(name) ;
+    }
+    meow() {
+        return `meow...` ;
+    }
+    eat() {
+        return `i'm eating , and i'm cat` ;
+    }
+}
+
+
+let dog1 = new Dogs("Simba") ;
+console.log(dog1) ;
+
+
+let dog2 = new Dogs("mumba") ;
+console.log(dog2) ;
+
+let cat1 = new Cats("sweety") ;
+console.log(cat1) ;
